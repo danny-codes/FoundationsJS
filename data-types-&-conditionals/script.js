@@ -194,3 +194,10 @@ function setColor() {
       para.textContent = "";
   }
 }
+
+isBirthday = true;
+
+const greeting = isBirthday
+	? 'Happy birthday Jane Doe!'
+	: 'Hello Jane Doe.';
+console.log(greeting);
