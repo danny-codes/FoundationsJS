@@ -149,3 +149,26 @@ if (userName === 'Admin'){
 // 	userLogin = prompt('Whats your login?');
 
 // }
+
+const select = document.querySelector('select');
+const para = document.querySelector('p');
+
+select.addEventListener('change', setColor);
+
+function setColor() {
+	const choice = select.value
+
+	if (choice === 'red') {
+		para.textContent = 'What a cool choice!'
+	}
+
+	else if (choice === 'blue') {
+		para.textContent = 'Really tranquil choice'
+	}
+	else if (choice === 'green') {
+		para.textContent = 'Amazing!'
+	}
+	else {
+		para.textContent = '';
+	}
+}
