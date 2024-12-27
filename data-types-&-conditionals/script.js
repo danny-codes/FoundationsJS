@@ -201,3 +201,24 @@ const greeting = isBirthday
 	? 'Happy birthday Jane Doe!'
 	: 'Hello Jane Doe.';
 console.log(greeting);
+
+const selectTheme = document.getElementById('theme');
+const html = document.querySelector('html');
+const themeShowOffText = document.getElementById('themeShowOff');
+
+document.body.style.padding = '10px';
+
+function update(bgColor, textColor) {
+	html.style.backgroundColor = bgColor;
+	html.style.color = textColor;
+}
+
+selectTheme.addEventListener('change', () =>
+	selectTheme.value === 'black'
+	? update('black', 'white')
+	: update('black', 'green')
+);
+
+selectTheme.addEventListener('change', () => {
+	themeShowOffText.style.visibility = 'visible';
+});
