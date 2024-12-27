@@ -81,3 +81,71 @@ let hour = 9;
 if (hour < 10 || hour > 18) {
 	console.log( 'The office is closed.' );
 }
+
+console.log((a && b) || (c && d));
+
+console.log(!!'non empty');
+
+
+age = 14;
+if(age >= 14 && age <= 90){
+	console.log('hi');
+} // it checks to see if the age is actually is within the allowed range, if true for both returns true, if one or more false it returns false
+
+if(!(age >= 14 && age <= 90)){
+	console.log('hello');
+}
+
+if(age < 14 || age > 90){
+	console.log('the age is out of the range');
+} // so if at least one of the values is out of the range, it returns true
+
+// Runs.
+// The result of -1 || 0 = -1, truthy
+if (-1 || 0) console.log( 'first' );
+
+// Doesn't run
+// -1 && 0 = 0, falsy
+if (-1 && 0) console.log( 'second' );
+
+// Executes
+// Operator && has a higher precedence than ||
+// so -1 && 1 executes first, giving us the chain:
+// null || -1 && 1  ->  null || 1  ->  1
+if (null || -1 && 1) console.log( 'third' );
+
+let userName = prompt('What is your username?', '');
+
+if (userName === 'Admin'){
+	let password = prompt('What is your password?', '')
+	if (password === 'TheMaster'){
+		alert('Welcome!');
+	}
+	else if (password === '' || password === null) {
+		alert('Canceled!');
+	}
+	else{
+		alert('Wrong password');
+	}
+}
+	else if (userName === '' || userName === null) {
+		alert('Canceled');
+	}
+	else {
+		alert("I don't know you")
+	}
+
+// function userLogin() {
+// 	userLogin = prompt("What's your login?");
+// 	if (userLogin = "Admin") {
+// 		password = prompt('Your password');
+// 	}
+// 	else{ (userLogin = '' || null)
+// 		alert('Canceled');
+// 	}
+// }
+
+// function userLogin() {
+// 	userLogin = prompt('Whats your login?');
+
+// }
