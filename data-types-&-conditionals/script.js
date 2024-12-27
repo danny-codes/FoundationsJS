@@ -155,20 +155,42 @@ const para = document.querySelector('p');
 
 select.addEventListener('change', setColor);
 
+// function setColor() {
+// 	const choice = select.value
+
+// 	if (choice === 'red') {
+// 		para.textContent = 'What a cool choice!'
+// 	}
+
+// 	else if (choice === 'blue') {
+// 		para.textContent = 'Really tranquil choice'
+// 	}
+// 	else if (choice === 'green') {
+// 		para.textContent = 'Amazing!'
+// 	}
+// 	else {
+// 		para.textContent = '';
+// 	}
+// }
+
+//using switch statements instead
+
 function setColor() {
-	const choice = select.value
+  const choice = select.value;
 
-	if (choice === 'red') {
-		para.textContent = 'What a cool choice!'
-	}
+  switch (choice) {
+    case "red":
+      para.textContent = "What a cool choice!";
+      break;
 
-	else if (choice === 'blue') {
-		para.textContent = 'Really tranquil choice'
-	}
-	else if (choice === 'green') {
-		para.textContent = 'Amazing!'
-	}
-	else {
-		para.textContent = '';
-	}
+    case "blue":
+      para.textContent = "Really tranquil choice";
+      break;
+
+    case "green":
+      para.textContent = "Amazing!";
+      break;
+    default:
+      para.textContent = "";
+  }
 }
