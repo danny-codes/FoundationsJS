@@ -244,9 +244,12 @@ function showExplanation(){
 		explanation.textContent = 'A single yellow solid line marks the center of a road with two-way traffic.'
 	}
 	else if (choice === 'yellow-double-solid'){
-		explanation.textContent = 'Never pass over double solid yellow lines unless: you are in a HOV carpool that has a designated entrance on the left, making a left turn to exit or making a U-turn.'
+		explanation.textContent = 'Never pass over double solid yellow lines. Stay to the right of them unless: you are in a HOV carpool that has a designated entrance on the left, making a left turn across single set of double yellow lines to exit a driveway or private road or when making a U-turn, instructed by constructions or signs to drive on the other side.'
 	}
 	else if (choice === 'yellow-broken'){
 		explanation.textContent = 'A yellow broken line means that you may pass if the broken line is next to the lane that you are currently occupying.'
+	}
+	else {
+		explanation.textContent = '';
 	}
 }
