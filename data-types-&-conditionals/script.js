@@ -222,3 +222,31 @@ selectTheme.addEventListener('change', () =>
 selectTheme.addEventListener('change', () => {
 	themeShowOffText.style.visibility = 'visible';
 });
+
+const selectLine = document.getElementById('line');
+const explanation = document.getElementById('lineExplanation');
+
+selectLine.addEventListener('change', showExplanation);
+
+function showExplanation(){
+	const choice = selectLine.value
+	
+	if (choice === 'white-single-solid'){
+		explanation.textContent = 'A single solid white line means that the traffic is going in the same direction, for example one-way streets.'
+	}
+	else if (choice === 'white-double-solid'){
+		explanation.textContent = 'Double solid lines mark a barrier between a regular use lane and a preferential use lane (HOV lane). Do not ever change lanes over double solid white lines.'
+	}
+	else if (choice === 'white-broken'){
+		explanation.textContent = 'White broken lines mean that there are two or more lanes going in the same direction.'
+	}
+	else if (choice === 'yellow-single-solid'){
+		explanation.textContent = 'A single yellow solid line marks the center of a road with two-way traffic.'
+	}
+	else if (choice === 'yellow-double-solid'){
+		explanation.textContent = 'Never pass over double solid yellow lines unless: you are in a HOV carpool that has a designated entrance on the left, making a left turn to exit or making a U-turn.'
+	}
+	else if (choice === 'yellow-broken'){
+		explanation.textContent = 'A yellow broken line means that you may pass if the broken line is next to the lane that you are currently occupying.'
+	}
+}
