@@ -46,15 +46,17 @@ function troubleshooting() {
  * Change this code so it returns `true` when the number is greater than or equal to 10, and false if it is less than 10
  */
 
-number = Number(prompt("enter a number"));
 
-function numberChecker() {
+function numberChecker(number) {
 	if(number >= 10) {
 		return true;
-	} else{(number < 10)
+	} else{
 		return false;
 	}
 }
+
+const userInputNumber = Number(prompt("What's your number?"));
+console.log(numberChecker(userInputNumber));
 
 /**
  * Lets do some math!
@@ -274,6 +276,10 @@ if (number > 0) {
 
 let result = (a + b < 4) ? 'Below': 'Over';
 
+let login = prompt('Enter your role:');
+
 let message = (login == 'Employe') ? 'Hello' :
 (login == 'Director') ?
 'Greetings' :(login == '') ?'No login': '';
+
+console.log(message);
