@@ -253,3 +253,28 @@ function showExplanation(){
 		explanation.textContent = '';
 	}
 }
+
+let question = prompt('What is the "official" name of JavaScript?');
+
+if (question == 'ECMAScript'){
+	console.log('Right!');
+} else {
+	console.log("You don’t know? ECMAScript!");
+}
+
+let number = prompt('Give me a number', 0);
+
+if (number > 0) {
+	console.log(1);
+} else if (number < 0) {
+	console.log(-1);
+} else {
+	console.log(0);
+}
+
+let result = (a + b < 4) ? 'Below': 'Over';
+
+let message = (login == 'Employe') ? 'Hello' :
+(login == 'Director') ?
+'Greetings' :(login == '') ?
+'No login': '';
