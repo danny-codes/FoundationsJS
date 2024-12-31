@@ -43,3 +43,16 @@ sayHello();
 document.addEventListener('keydown', (event) => {
     console.log(`You pressed "${event.key}"!`);
 }); // arrow function
+
+const numbers = [1, 2, 3];
+
+const doubled = numbers.map(item => item * 2);
+
+console.log(doubled); // [2, 4, 6]
+
+const textBox = document.querySelector('#textBox');
+const output = document.querySelector('#output');
+
+textBox.addEventListener('keydown', (e) => {
+    output.textContent = `You pressed "${e.key}".`
+});
