@@ -29,3 +29,9 @@ const myNewString = myText.replace('person', 'coder');
 const myArray = ['I', 'like', 'color', 'blue'];
 const aString = myArray.join(' ');
 console.log(aString);
+
+function sayHello(name = 'Alex') {
+    console.log(`Hello ${name}!`);
+}
+sayHello('Paul');
+sayHello();
