@@ -36,6 +36,10 @@ function sayHello(name = 'Alex') {
 sayHello('Paul');
 sayHello();
 
-document.addEventListener('keydown', function (event) {
+// document.addEventListener('keydown', function (event) {
+//     console.log(`You pressed "${event.key}"!`);
+// });
+
+document.addEventListener('keydown', (event) => {
     console.log(`You pressed "${event.key}"!`);
-});
+}); // arrow function
