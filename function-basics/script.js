@@ -22,3 +22,6 @@ function random(number) {
   return Math.floor(Math.random() * number); // random number between 0 and a specified number
 }
 const myRandomNum = random(100);
+
+const myText = 'I am a person';
+const myNewString = myText.replace('person', 'coder');
