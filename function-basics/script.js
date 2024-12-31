@@ -36,6 +36,6 @@ function sayHello(name = 'Alex') {
 sayHello('Paul');
 sayHello();
 
-textBox.addEventListener('keydown', function (event) {
+document.addEventListener('keydown', function (event) {
     console.log(`You pressed "${event.key}"!`);
 });
