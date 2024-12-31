@@ -17,3 +17,8 @@ function favoriteAnimal(animal) {
 console.log(favoriteAnimal('Whale'))
 
 const myNumber = Math.random();
+
+function random(number) {
+  return Math.floor(Math.random() * number); // random number between 0 and a specified number
+}
+const myRandomNum = random(100);
