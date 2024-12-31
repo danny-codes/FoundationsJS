@@ -70,3 +70,36 @@ function b() {
     const z = 3;
     output1(z);
 }
+
+const para = document.getElementById('para');
+const numInput = document.getElementById('numInput');
+
+function squared(num) {
+  return num * num;
+}
+
+function cubed(num) {
+  return num * num * num;
+}
+
+function factorial(num) {
+    if (num < 0) return undefined;
+    if (num === 0) return 1;
+    let x = num - 1;
+    while (x > 1) {
+        num *= x;
+        x--;
+    }
+    return num;
+    }
+    
+numInput.addEventListener("change", () => {
+    const num = parseFloat(numInput.value);
+    if (isNaN(num)) {
+    para.textContent = "You need to enter a number!";
+} else {
+    para.textContent = `${num} squared is ${squared(num)}. `;
+    para.textContent += `${num} cubed is ${cubed(num)}. `;
+    para.textContent += `${num} factorial is ${factorial(num)}. `;
+}
+});
