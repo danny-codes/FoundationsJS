@@ -15,3 +15,5 @@ function favoriteAnimal(animal) {
 }
 
 console.log(favoriteAnimal('Whale'))
+
+const myNumber = Math.random();
