@@ -159,3 +159,7 @@ function min2(a, b) {
 function pow(x, n) {
     return x * n;
 }
+
+let sayHi = function() {
+    console.log('Hi');
+}
