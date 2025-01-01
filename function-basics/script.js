@@ -103,3 +103,59 @@ numInput.addEventListener("change", () => {
     para.textContent += `${num} factorial is ${factorial(num)}. `;
 }
 });
+
+function showMessage(from, text ='no text given'){
+    console.log(from + ': ' + text);
+}
+
+showMessage('Me');
+
+if (undefined == null){
+    console.log('hi');
+}
+
+function showCount(count) {
+    console.log(count ?? "unknown");
+}
+
+showCount(null);
+
+function getSum(a, b){
+    return a + b;
+}
+
+let result = getSum(1, 2);
+console.log(result); // 3
+
+// function doNothing() {}
+// console.log(doNothing() === undefined) // true
+
+function doNothing() {
+    return;
+}
+console.log(doNothing() === undefined) // true
+
+function checkAge(age) {
+    return (age > 18) ? true : confirm('Did parents allow you?');
+}
+
+function checkAge(age) {
+    return (age  > 18) || confirm('Did parents allow you?')
+}
+
+function min(a, b) {
+    if (a < b) {
+        return a;
+    }
+    else {
+        return b;
+    }
+}
+
+function min2(a, b) {
+    return (a < b) ? a : b;
+}
+
+function pow(x, n) {
+    return x * n;
+}
