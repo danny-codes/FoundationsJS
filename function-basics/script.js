@@ -163,3 +163,5 @@ function pow(x, n) {
 let sayHi = function() {
     console.log('Hi');
 }
+
+let greetings = sayHi;
