@@ -165,3 +165,27 @@ let sayHi = function() {
 }
 
 let greetings = sayHi;
+
+function ask(question, yes, no){
+    if (confirm(question)) yes()
+    else no();
+}
+
+function showOk() {
+    console.log('You agreed.');
+}
+
+function showCancel() {
+    console.log('You canceled the execution.');
+}
+
+ask('Do you agree?', showOk, showCancel);
+
+let age = prompt('What is your age?', 18);
+
+// conditional declaration using function expression
+let welcome = (age < 18) ?
+    function() { alert('Hello!'); } :
+    function() { alert('Greetings!'); };
+
+welcome();
