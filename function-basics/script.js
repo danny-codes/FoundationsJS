@@ -222,3 +222,22 @@ sayBye();
 //     () =>
 //     alert("You canceled the execution.")
 // );
+
+function add7(number) {
+    let result = number + 7;
+    return result;
+}
+
+function multiply(num1, num2) {
+    let result = num1 * num2;
+    return result;
+}
+
+function capitalize(str) {
+    let result = str.charAt(0).toUpperCase(0) + str.slice(1).toLowerCase;
+    return result; // 
+}
+
+function lastLetter(str) {
+    return str.slice(-1);
+}
