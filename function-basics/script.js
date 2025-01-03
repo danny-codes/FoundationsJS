@@ -189,3 +189,36 @@ let welcome = (age < 18) ?
     function() { alert('Greetings!'); };
 
 welcome();
+
+let getSum2 = (a, b) => a + b;
+
+alert(getSum2(1, 2));
+
+let double = n => n * 2;
+
+alert(double(3));
+
+let sayBye = () => console.log('Bye!');
+
+sayBye();
+
+// let age = prompt("What is your age?", 18);
+
+// let welcome = (age < 18) ?
+//     () => alert('Hello!') :
+//     () => alert("Greetings!");
+
+// welcome();
+
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes();
+//     else no();
+// }
+
+// ask(
+//     "Do you agree?",
+//     () =>
+//     alert("You agreed."),
+//     () =>
+//     alert("You canceled the execution.")
+// );
