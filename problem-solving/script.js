@@ -14,3 +14,10 @@ for (let i = 1; i <= answer; i++) {
     console.log(i);
     }
 }
+
+keepGoing = true;
+if (keepGoing === true) {
+    console.log('Good job!');
+    } else {
+        console.log('You tried.');
+    }
