@@ -42,10 +42,63 @@ function playRound(computerChoice, humanChoice) {
         if (humanChoice === 'rock') {
             console.log('Tie!');
         }
+        else if (humanChoice === 'paper') {
+            console.log('You lose! Rock beats paper!');
+            computerScore = +1;
+            return computerScore;
+        }
+        else if (humanChoice === 'scissors') {
+            console.log('You lose! Rock beats scissors!');
+            computerScore = +1;
+            return computerScore;
+        }
+        else {
+            console.log('Something went wrong!');
+        }
+    }
+    if (computerChoice === 'paper'){
+        if (humanChoice === 'paper') {
+            console.log('Tie!');
+        }
+        else if (humanChoice === 'rock') {
+            console.log('You win! Rock beats paper!');
+            humanScore = +1;
+            return humanScore;
+        }
+        else if (humanChoice === 'scissors') {
+            console.log('You win! Scissors beat paper!');
+            humanScore = +1;
+            return humanScore;
+        }
+        else {
+            console.log('Something went wrong!');
+        }
+    }
+    if (computerChoice === 'scissors'){
+        if (humanChoice === 'scissors') {
+            console.log('Tie!');
+        }
+        else if (humanChoice === 'rock') {
+            console.log('You win! Rock beats scissors!');
+            humanScore = +1;
+            return humanScore;
+        }
+        else if (humanChoice === 'paper') {
+            console.log('You lose! Scissors beat paper!');
+            computerScore = +1;
+            return computerScore;
+        }
+        else {
+            console.log('Something went wrong!');
+        }
     }
 }
+// every time with every possible right user input 'rock', 'paper' and 'scissors'
+// 'Something went wrong' returns
 
 const computerSelection = getComputerChoice();
 const humanSelection = getHumanChoice();
 
 playRound(computerSelection, humanSelection);
+
+function playGame() {}
