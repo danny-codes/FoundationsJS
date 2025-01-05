@@ -99,4 +99,6 @@ const humanSelection = getHumanChoice();
 
 playRound(computerSelection, humanSelection);
 
-function playGame() {}
+function playGame() {
+    // call playRound 5 times
+}
