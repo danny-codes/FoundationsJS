@@ -93,8 +93,6 @@ function playRound(computerChoice, humanChoice) {
         }
     }
 }
-// every time with every possible right user input 'rock', 'paper' and 'scissors'
-// 'Something went wrong' returns
 
 const computerSelection = getComputerChoice();
 const humanSelection = getHumanChoice();
