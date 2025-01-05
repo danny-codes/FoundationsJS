@@ -18,6 +18,7 @@ function getComputerChoice() {
 
 function getHumanChoice() {
     let userChoice = prompt('Choose one: rock, paper or scissors?');
+    // make userChoice lower case or upper case
 
     if (userChoice === 'Rock' || userChoice === 'rock') {
         return userChoice;
@@ -35,3 +36,16 @@ function getHumanChoice() {
 
 let computerScore = 0;
 let humanScore = 0;
+
+function playRound(computerChoice, humanChoice) {
+    if (computerChoice === 'rock'){
+        if (humanChoice === 'rock') {
+            console.log('Tie!');
+        }
+    }
+}
+
+const computerSelection = getComputerChoice();
+const humanSelection = getHumanChoice();
+
+playRound(computerSelection, humanSelection);
