@@ -34,3 +34,6 @@ function myFunction(value) {
 
 fruits.push('Coconut');
 fruits[6] = "Orange";  // creates undefined "holes" in fruits 
+let type = typeof fruits;
+Array.isArray(fruits); // returns a boolean value
+(fruits instanceof Array); // instanceof operator returns true if an object is created by a given constructor
