@@ -42,3 +42,11 @@ document.getElementById('demo').innerHTML = fruits.join(' * ');
 fruits.pop();
 fruits.push('Kiwi');
 let length = fruits.push("Banana"); // returns the new array length
+fruits.shift();
+fruits.unshift('Watermelon');
+fruits[fruits.length] = 'Grape';
+
+const evenNums = [2, 4, 6, 8];
+const oddNums = [1, 3, 5, 7, 9];
+
+const numbers = evenNums.concat(oddNums, 'other arrays or strings');
