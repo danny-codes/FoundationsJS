@@ -7,3 +7,9 @@ let fruit = fruits[1];
 fruits[0] = 'Mango';
 document.getElementById('para').innerHTML = fruits.toString();
 document.getElementById('para').innerHTML = myFavNumbers;
+
+function sayHello() {
+    console.log('Hello!');
+}
+const myArray = [1, 2, 3];
+myArray[1] = sayHello;
