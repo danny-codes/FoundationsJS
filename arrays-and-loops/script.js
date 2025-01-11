@@ -63,3 +63,6 @@ fruits.splice(5, 0, 'Pear');
 
 // fruits.splice(0, 1); // first param (0) removes element at index 0,
 // second param (1) defines how many elements should be removed
+
+const months = ["Jan", "Feb", "Mar", "Apr"];
+const spliced = months.toSpliced(0, 1);
