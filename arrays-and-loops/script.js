@@ -70,3 +70,9 @@ const spliced = months.toSpliced(0, 1);
 fruits.push('Orange');
 const citrus = fruits.slice(6);
 const fruits2 = fruits.slice(0, 2); 
+
+const cats = ['Leopard', 'Tiger', 'Lion'];
+
+for (const cat of cats) {
+    console.log(cat);
+}
