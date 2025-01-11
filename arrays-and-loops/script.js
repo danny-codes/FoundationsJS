@@ -66,3 +66,6 @@ fruits.splice(5, 0, 'Pear');
 
 const months = ["Jan", "Feb", "Mar", "Apr"];
 const spliced = months.toSpliced(0, 1);
+
+fruits.push('Orange');
+const citrus = fruits.slice(6);
