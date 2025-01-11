@@ -14,3 +14,20 @@ function sayHello() {
 const myArray = [1, 2, 3];
 myArray[1] = sayHello;
 myArray.sort();
+
+let lastFruit = fruits[fruits.length - 1];
+let fruitsLen = fruits.length;
+
+let text = '<ul>';
+for (let i = 0; i < fruitsLen; i++){
+    text += '<li>' + fruits[i] + '</li>'
+}
+text += '</ul>'
+
+let textStr = '<ul>';
+fruits.forEach(myFunction);
+textStr += '</ul>';
+
+function myFunction(value) {
+    textStr += '<li>' + value + '</li>';
+}
