@@ -5,3 +5,4 @@ fruits[0] = 'Apple';
 fruits[1] = 'Pineapple';
 let fruit = fruits[1];
 fruits[0] = 'Mango';
+document.getElementById('para').innerHTML = fruits.toString();
