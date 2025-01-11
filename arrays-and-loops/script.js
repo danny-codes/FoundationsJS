@@ -52,3 +52,9 @@ const oddNums = [1, 3, 5, 7, 9];
 const numbers = evenNums.concat(oddNums, 'other arrays or strings');
 
 // fruits.copyWithin(2, 0);
+
+const myArr = [[1,2],[3,4],[5,6]];
+const newArr = myArr.flat();
+
+const myArr1 = [1, 2, 3, 4, 5, 6];
+const newArr1 = myArr.flatMap(x => [x, x * 10]);
