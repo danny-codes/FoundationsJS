@@ -31,3 +31,6 @@ textStr += '</ul>';
 function myFunction(value) {
     textStr += '<li>' + value + '</li>';
 }
+
+fruits.push('Coconut');
+fruits[6] = "Orange";  // creates undefined "holes" in fruits 
