@@ -13,3 +13,4 @@ function sayHello() {
 }
 const myArray = [1, 2, 3];
 myArray[1] = sayHello;
+myArray.sort();
