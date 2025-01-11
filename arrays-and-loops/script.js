@@ -40,3 +40,5 @@ Array.isArray(fruits); // returns a boolean value
 
 document.getElementById('demo').innerHTML = fruits.join(' * ');
 fruits.pop();
+fruits.push('Kiwi');
+let length = fruits.push("Banana"); // returns the new array length
