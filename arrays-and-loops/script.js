@@ -69,3 +69,4 @@ const spliced = months.toSpliced(0, 1);
 
 fruits.push('Orange');
 const citrus = fruits.slice(6);
+const fruits2 = fruits.slice(0, 2); 
