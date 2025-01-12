@@ -87,3 +87,7 @@ console.log(upperCats);
 
 const filtered = cats.filter((cat) => cat.startsWith('L'));
 console.log(filtered);
+
+// for (initializer; condition; final-expression) {
+//     // code to run
+// }
