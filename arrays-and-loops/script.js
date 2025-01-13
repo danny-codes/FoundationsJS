@@ -103,3 +103,20 @@ const clearBtn = document.querySelector('#clear');
 
 calculateBtn.addEventListener('click', calculate);
 clearBtn.addEventListener('click', () => (results.textContent = ''));
+
+for (let i = 0; i < cats.length; i++) {
+    console.log(cats[i]);
+}
+
+let myFavoriteCats = "My cats are called ";
+
+for (let i = 0; i < cats.length; i++) {
+    if (i === cats.length - 1) {
+        myFavoriteCats += `and ${cats[i]}.`;
+    }
+    else {
+        myFavoriteCats += `${cats[i]}, `;
+    }
+}
+
+console.log(myFavoriteCats);
