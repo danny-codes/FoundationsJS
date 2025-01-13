@@ -205,3 +205,10 @@ for (const person of people) {
 
 refused.textContent = refused.textContent.slice(0,refused.textContent.length-2) + '.';
 admitted.textContent = admitted.textContent.slice(0,admitted.textContent.length-2) + '.';
+
+for (let i = 0; i < 10; i++) {
+
+    if (i % 2 == 0) continue;
+
+    console.log(i);
+}
