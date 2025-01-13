@@ -212,3 +212,31 @@ for (let i = 0; i < 10; i++) {
 
     console.log(i);
 }
+
+for (let i = 2; i <= 10; i++) {
+    if (i % 2 == 0) {
+        console.log(i);
+    }
+}
+
+let j = 0;
+while (j < 3) {
+    console.log(`number ${j}!`);
+    j++;
+}
+
+let userNumber;
+
+do {
+    userNumber = prompt('Enter a number greater than 100: ', 0);
+} while (userNumber <= 100 && userNumber);
+
+let n = 10;
+
+nextPrime:
+for (let i = 2; i <= n; i++) {
+    for (let j = 2; j < i; j++) {
+        if (i % j == 0) continue nextPrime;
+    }
+    console.log(i);
+}
