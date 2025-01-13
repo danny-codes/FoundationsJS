@@ -148,4 +148,21 @@ btn.addEventListener("click", () => {
         para.textContent = "Contact not found.";
     }
 });
-    
+
+const par = document.getElementById("displayNum");
+const numInput = document.getElementById("number");
+const intBtn = document.getElementById("intBtn");
+
+intBtn.addEventListener("click", () => {
+    par.textContent = "Output: ";
+    const num = numInput.value;
+    numInput.value = "";
+    numInput.focus();
+    for (let i = 1; i <= num; i++) {
+        let sqRoot = Math.sqrt(i);
+        if (Math.floor(sqRoot) !== sqRoot) {
+        continue;
+    }
+    par.textContent += `${i} `;
+    }
+});
