@@ -240,3 +240,7 @@ for (let i = 2; i <= n; i++) {
     }
     console.log(i);
 }
+
+while (i < 0) {
+    console.log(`${i} is > 0`);
+}
