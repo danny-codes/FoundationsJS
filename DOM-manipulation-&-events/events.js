@@ -14,3 +14,11 @@ btn.addEventListener('click', alertFunction);
 btn.addEventListener('click', function (e) {
     console.log(e);
 });
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        alert(button.id);
+    })
+})
