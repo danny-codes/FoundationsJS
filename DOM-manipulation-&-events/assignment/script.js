@@ -26,3 +26,5 @@ sect.appendChild(linkPara);
 // para.style.color = 'blue';
 // para.style.padding = '10px';
 // para.style.textAlign = 'center';
+
+para.setAttribute('class', 'highlight');
