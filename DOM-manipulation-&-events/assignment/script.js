@@ -22,3 +22,7 @@ sect.appendChild(linkPara);
 // linkPara.remove(); 
 
 // linkPara.parentNode.removeChild(linkPara);
+
+para.style.color = 'blue';
+para.style.padding = '10px';
+para.style.textAlign = 'center';
