@@ -18,3 +18,5 @@ linkPara.appendChild(text);
 sect.appendChild(linkPara);
 
 // sect.removeChild(linkPara);
+
+// linkPara.remove(); 
