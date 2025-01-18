@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer>
+        addEventListener('DOMContentLoaded', (event) => {
+            console.log('The DOM is fully loaded.');
+        });
+
+        addEventListener('load', (event) => {
+            console.log('The page is fully loaded.');
+        });
+
+        addEventListener('beforeunload', (event) => {
+            event.preventDefault(); // show the confirmation dialog
+
+            event.returnValue = ''; // google chrome requires returnValue to be set
+        });
+
+        addEventListener('unload', (event) => {
+            // send analytical data or clean up resources
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
