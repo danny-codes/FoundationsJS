@@ -20,3 +20,5 @@ sect.appendChild(linkPara);
 // sect.removeChild(linkPara);
 
 // linkPara.remove(); 
+
+// linkPara.parentNode.removeChild(linkPara);
