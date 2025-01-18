@@ -16,3 +16,5 @@ const linkPara = document.querySelector('p');
 linkPara.appendChild(text);
 
 sect.appendChild(linkPara);
+
+// sect.removeChild(linkPara);
