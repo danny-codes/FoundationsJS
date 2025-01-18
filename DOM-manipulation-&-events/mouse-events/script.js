@@ -54,3 +54,30 @@ btn.addEventListener('mouseup', (e) => {
             msg.textContent = `Unknown mouse button code ${event.button}`;
     }
 });
+
+let btnKeys = document.querySelector('#btnKeys');
+
+btnKeys.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+});
+
+btnKeys.addEventListener('click', (e) => {
+    let keys = [];
+
+    if (e.shiftKey) keys.push('shift');
+    if (e.ctrlKey) keys.push('ctrl');
+    if (e.altKey) keys.push('alt');
+    if (e.metaKey) keys.push('meta');
+
+    let msg = document.querySelector('#messageKeys');
+    msg.textContent = `Keys: ${keys.join('+')}`;
+});
+
+let track = document.querySelector('#track');
+
+track.addEventListener('mousemove', (e) => {
+    let log = document.querySelector('#log');
+    log.innerHTML = `
+    Screen X/Y: (${e.screenX}, ${e.screenY})
+    Client X/Y: (${e.clientX}, ${e.clientY})`
+});
