@@ -13,3 +13,5 @@ function addBorder(elem) {
 }
 
 highlight(note, addBorder);
+
+// let event = new CustomEvent(eventType, options); 
