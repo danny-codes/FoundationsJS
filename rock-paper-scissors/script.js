@@ -17,7 +17,7 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    let choice = prompt('Choose one: rock, paper or scissors?');
+    // let choice = prompt('Choose one: rock, paper or scissors?');
 
     if (choice === null) {
         console.log('You canceled the prompt');
@@ -42,18 +42,18 @@ function playGame() {
     let computerScore = 0;
     let humanScore = 0;
 
-    for (let i = 0; i < 5; i++) {
-        const computerSelection = getComputerChoice();
-        const humanSelection = getHumanChoice();
+    // for (let i = 0; i < 5; i++) {
+    //     const computerSelection = getComputerChoice();
+    //     const humanSelection = getHumanChoice();
 
-        playRound(computerSelection, humanSelection);
+    //     playRound(computerSelection, humanSelection);
 
-        console.log(`Round ${i + 1}`);
-        console.log(`Player chose: ${humanSelection}`);
-        console.log(`Computer chose: ${computerSelection}`);
+    //     console.log(`Round ${i + 1}`);
+    //     console.log(`Player chose: ${humanSelection}`);
+    //     console.log(`Computer chose: ${computerSelection}`);
 
-        console.log(`Current score - Player: ${humanScore}, Computer: ${computerScore}`);
-    }
+    //     console.log(`Current score - Player: ${humanScore}, Computer: ${computerScore}`);
+    // }
 
 
     function playRound(computerChoice, humanChoice) {
