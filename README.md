@@ -1,6 +1,6 @@
 # FoundationsJS
 
-This repository contains my solutions and exercises from the **JavaScript Foundations** course of [The Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript-foundations](https://www.theodinproject.com/paths/foundations/courses/foundations#javascript-basics). It's a collection of various JavaScript exercises aimed at building foundational skills for web development.
+This repository contains my solutions and exercises from the **JavaScript Foundations** course of [The Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript-foundations](https://www.theodinproject.com/paths/foundations/courses/foundations#javascript-basics)). It's a collection of various JavaScript exercises aimed at building foundational skills for web development.
 
 ### About this Repository:
 - **Learning Focus:** Basics of JavaScript, DOM manipulation, arrays, loops, functions, conditionals, clean code practices, and more.
