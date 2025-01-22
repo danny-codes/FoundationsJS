@@ -30,6 +30,7 @@ div {
     padding: 15px;
     font-weight: 500;
     background-color: rgb(249, 249, 195);
+    margin-right: 50px;
 }
 
 @font-face {
