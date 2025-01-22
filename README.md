@@ -3,7 +3,7 @@
 This repository contains my solutions and exercises from the **JavaScript Foundations** course of [The Odin Project](https://www.theodinproject.com/paths/foundations/courses/foundations#javascript-basics). It's a collection of various JavaScript exercises aimed at building foundational skills for web development.
 
 ### About this Repository:
-- **Learning Focus:** Basics of JavaScript, DOM manipulation, arrays, loops, functions, conditionals, clean code practices, and more.
+- **Learning Focus:** Basics of JavaScript, DOM manipulation, arrays, loops, functions, conditionals, clean code practices, and object basics.
 - **Exercises:** Each folder in this repo represents a different topic or exercise that I worked through as part of the course.
 
 ### Contents:
@@ -14,7 +14,7 @@ This repository contains my solutions and exercises from the **JavaScript Founda
 5. **function-basics**: Functions, arguments, and return values in JavaScript.
 6. **js-dev-tools**: Debugging and using development tools.
 7. **problem-solving**: Problem-solving techniques using JavaScript.
-8. **rock-paper-scissors**: A simple Rock-Paper-Scissors game built in JavaScript.
+8. **rock-paper-scissors**: A simple Rock-Paper-Scissors game built in JavaScript and with UI.
 
 ### Purpose:
 This project is my personal practice as I work through the foundational topics in JavaScript. The goal is to solidify my understanding of the concepts, improve my coding skills, and eventually tackle more complex projects.
