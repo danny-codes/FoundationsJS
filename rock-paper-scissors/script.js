@@ -78,10 +78,16 @@ function playGame() {
                 console.log('Tie!');
             }
         }
-        else if (computerChoice === 'paper' && humanChoice === 'rock', 
-            computerChoice === 'paper' && humanChoice === 'scissors',
-            computerChoice === 'scissors' && humanChoice === 'rock'
+        else if (computerChoice === 'paper' && humanChoice === 'rock'
         ) {
+            console.log('You win!');
+            humanScore += 1;
+        }
+        else if (computerChoice === 'paper' && humanChoice === 'scissors') {
+            console.log('You win!');
+            humanScore += 1;
+        }
+        else if (computerChoice === 'scissors' && humanChoice === 'rock') {
             console.log('You win!');
             humanScore += 1;
         }
