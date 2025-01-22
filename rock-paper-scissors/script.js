@@ -1,3 +1,7 @@
+let rockBtn = document.querySelector('#rock');
+let paperBtn = document.querySelector('#paper');
+let scissorsBtn = document.querySelector('#scissors');
+
 function getRandomInt() {
     let num = 3;
     return Math.floor(Math.random() * num);
@@ -41,6 +45,18 @@ function playGame() {
 
     let computerScore = 0;
     let humanScore = 0;
+
+    rockBtn.addEventListener('click', () => {
+        playRound();
+    })
+    
+    paperBtn.addEventListener('click', () => {
+        playRound();
+    })
+    
+    scissorsBtn.addEventListener('click', () => {
+        playRound();
+    })
 
     // for (let i = 0; i < 5; i++) {
     //     const computerSelection = getComputerChoice();
