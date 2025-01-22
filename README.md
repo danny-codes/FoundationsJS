@@ -3,7 +3,7 @@
 Welcome to the live version of my **FoundationsJS** projects! This branch contains the projects I built as part of the **JavaScript Foundations** course from [The Odin Project](https://www.theodinproject.com/).
 
 ### Live Projects:
-- [Rock Paper Scissors Game]([link-to-live-preview](https://danny-codes.github.io/FoundationsJS/))
+- [Rock Paper Scissors Game](https://danny-codes.github.io/FoundationsJS/)
 
 ### Purpose:
 This branch hosts my JavaScript projects. You can view them directly on GitHub Pages by clicking the links above.
