@@ -9,11 +9,12 @@ let humanScore = 0;
 
 let roundCount = 0;
 
-function appendMessage(message) {
+function appendMessage(message, color) {
     // results.textContent += message + '\n'; doesnt work as intended
-    let messageP = document.createElement('p');
-    messageP.textContent = message;
-    results.appendChild(messageP);
+    let messageElement = document.createElement('p');
+    messageElement.textContent = message;
+    messageElement.style.color = color;
+    results.appendChild(messageElement);
 }
 
 function getRandomInt() {
@@ -37,24 +38,24 @@ function getComputerChoice() {
 function playRound(computerChoice, humanChoice) {
     if (computerChoice === humanChoice) {
         if (computerChoice === humanChoice) {
-            appendMessage('Tie!');
+            appendMessage('Tie!', 'blue');
         }
     }
     else if (computerChoice === 'paper' && humanChoice === 'rock'
     ) {
-        appendMessage('You win!');
+        appendMessage('You win!', 'green');
         humanScore += 1;
     }
     else if (computerChoice === 'paper' && humanChoice === 'scissors') {
-        appendMessage('You win!');
+        appendMessage('You win!', 'green');
         humanScore += 1;
     }
     else if (computerChoice === 'scissors' && humanChoice === 'rock') {
-        appendMessage('You win!');
+        appendMessage('You win!', 'green');
         humanScore += 1;
     }
     else {
-        appendMessage('You lose!');
+        appendMessage('You lose!', 'red');
         computerScore += 1;
     }
 
@@ -67,13 +68,13 @@ function playRound(computerChoice, humanChoice) {
 function endGame() {
     appendMessage(`Final scores: Player ${humanScore} - Computer ${computerScore}`);
     if (humanScore > computerScore) {
-        appendMessage('Congratulations, you win the game!');
+        appendMessage('Congratulations, you win the game!', 'green');
     }
     else if (humanScore < computerScore) {
-        appendMessage('Sorry, the computer wins the game!');
+        appendMessage('Sorry, the computer wins the game!', 'red');
     }
     else {
-        appendMessage("It's a tie!");
+        appendMessage("It's a tie!", 'blue');
     }
 }
     
