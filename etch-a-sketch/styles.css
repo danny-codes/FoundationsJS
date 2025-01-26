@@ -18,13 +18,20 @@ h1 {
 #container {
     display: flex;
     flex-wrap: wrap;
-    /* gap: 10px; */
     margin: 15px;
+    margin-top: 30px;
+    /* width: 960px;
+    height: 960px; */
+    width: 480px;
+    height: 480px;
+    align-self: center;
+    overflow:hidden;
+    color:rgb(237, 225, 210);
+
 }
 
 .hover-effect {
-    color: rgb(255, 87, 87);
-    /* background-color: red; */
+    background-color: rgb(237, 225, 210);
 }
 
 .pixel {
@@ -34,6 +41,28 @@ h1 {
     background-color: black;
     border-radius: 50%;
     animation: fadeOut 30s forwards;
+}
+
+#numberBtn {
+    max-width: fit-content;
+    align-self: center;
+    display: inline-block; /* fallback for older browsers */
+    outline: 0;
+    cursor: pointer;
+    border: 1px solid #babfc3;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgba(0,0,0,0.05) 0px 1px 0px 0px;
+    background-color: rgb(119, 160, 160);
+    color: white;
+}
+
+#numberBtn:hover {
+    transform: scale(1.05);
+    background-color: rgb(87, 113, 113);
+    outline: 1px solid transparent;
 }
 
 footer {
