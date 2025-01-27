@@ -4,6 +4,8 @@ const numberBtn = document.querySelector('#numberBtn');
 
 const fragment = document.createDocumentFragment();
 
+const gridBounds = parentContainer.getBoundingClientRect();
+
 parentContainer.style.backgroundColor = 'white';
 
 function createGrid(size) {
@@ -17,11 +19,11 @@ function createGrid(size) {
         const cell = document.createElement('div');
         cell.style.width = `${number}px`;
         cell.style.height = `${number}px`;
-        // cell.style.backgroundColor = 'aqua';
         parentContainer.style.overflow = 'hidden';
-        parentContainer.appendChild(cell);
+        fragment.appendChild(cell);
 
     }
+    parentContainer.append(fragment);
 }
 
 function createPixel(x, y) {
@@ -30,7 +32,8 @@ function createPixel(x, y) {
     pixel.style.left = `${x - 2.5}px`;
     pixel.style.top = `${y - 2.5}px`;
 
-    parentContainer.appendChild(pixel);
+    fragment.appendChild(pixel);
+    parentContainer.append(fragment);
 
     setTimeout(() => {
         pixel.remove();
@@ -40,7 +43,20 @@ function createPixel(x, y) {
 createGrid(16);
 
 parentContainer.addEventListener('mouseover', (e) => {
+    if (
+        e.clientX >= gridBounds.left &&
+        e.clientX <= gridBounds.right &&
+        e.clientY >= gridBounds.top &&
+        e.clientY <= gridBounds.bottom
+    ) {
     createPixel(e.clientX, e.clientY);
+
+    }
+
+    // const x = e.clientX - gridBounds.left;
+    // const y = e.clientY - gridBounds.top;
+    // createPixel(x, y);
+
     const containerChildren = parentContainer.children;
     for (let child of containerChildren) {
         child.classList.add('hover-effect');
@@ -65,5 +81,3 @@ numberBtn.addEventListener('click', () => {
     }
     createGrid(inputNum);
 });
-
-parentContainer.appendChild(fragment);
