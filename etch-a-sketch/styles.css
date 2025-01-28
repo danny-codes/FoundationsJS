@@ -27,6 +27,7 @@ h1 {
     align-self: center;
     overflow:hidden;
     color:rgb(237, 225, 210);
+    border: 3px dotted rgb(77, 103, 255);
 }
 
 .hover-effect {
