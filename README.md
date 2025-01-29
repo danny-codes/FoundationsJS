@@ -7,10 +7,9 @@ Welcome to the live version of my **FoundationsJS** projects! This branch contai
 - [Etch-a-Sketch Project](https://danny-codes.github.io/FoundationsJS/etch-a-sketch/index.html)
 
 ## Technologies used
-<img src="icons/javascript.svg" alt="JavaScript" width="40" height="40" style="display: inline-block;" />
-<img src="icons/html5.svg" alt="HTML5" width="40" height="40" style="display: inline-block;" />
-<img src="icons/css.svg" alt="CSS3" width="40" height="40" style="display: inline-block;" />
-
+<img src="icons/javascript.svg" alt="JavaScript" width="40" height="40" style="display: inline; filter: invert(1) brightness(0) saturate(100%); margin-right: 10px;" />
+<img src="icons/html5.svg" alt="HTML5" width="40" height="40" style="display: inline; filter: invert(1) brightness(0) saturate(100%); margin-right: 10px;" />
+<img src="icons/css.svg" alt="CSS3" width="40" height="40" style="display: inline; filter: invert(1) brightness(0) saturate(100%);" />
 
 ### Purpose:
 This branch hosts my JavaScript projects. You can view them directly on GitHub Pages by clicking the links above.
