@@ -170,3 +170,53 @@ const arr = [1, 2, 3, 4, 5];
 const mappedArr = arr.map(addOne);
 // const mappedArr = arr.map((num) => num + 1); inline function
 console.log(mappedArr); // 
+
+function isOdd(num) {
+    return num % 2 !== 0;
+}
+
+const oddNums = arr.filter(isOdd);
+console.log(oddNums); // 1, 3, 5
+console.log(arr); // 1, 2, 3, 4, 5 (original array)
+
+const productOfAllNums = arr.reduce((total, currentItem) => {
+    return total * currentItem;
+}, 1);
+console.log(productOfAllNums); // Outputs 120
+console.log(arr); // Outputs [1, 2, 3, 4, 5]
+
+let myArray = [];
+function sumOfTripledEvens(array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 === 0) {
+            const tripleEvenNumber = array[i] * 3;
+            sum += tripleEvenNumber;
+        }
+    }
+    return sum;
+}
+
+function sumOfTripledEvens1(array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 === 0) {
+            const tripleEvenNumber = array[i] * 3;
+            sum += tripleEvenNumber;
+        }
+    }
+    return sum;
+}
+
+function isEven (num) {
+    if (num % 2 === 0) {
+        return num;
+    }
+}
+
+function sumOfTripledEvens2(array) {
+    return array
+    .filter((num) => num % 2 === 0)
+    .map((num) => num * 3)
+    .reduce((acc, curr) => acc + curr);
+}
