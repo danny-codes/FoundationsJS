@@ -20,7 +20,8 @@ This repository contains my solutions and exercises from the **JavaScript Founda
 This repo is for my personal practice as I work through the foundational topics in JavaScript. The goal is to solidify my understanding of the concepts, improve my coding skills, and eventually tackle more complex projects.
 
 ### Live Preview:
-- [Rock Paper Scissors Game](https://danny-codes.github.io/FoundationsJS/)
+- [Rock Paper Scissors Game](https://danny-codes.github.io/FoundationsJS/rock-paper-scissors/index.html)
+- [Etch-a-Sketch Project](https://danny-codes.github.io/FoundationsJS/etch-a-sketch/index.html)
 
 ### How to Run the Project Locally:
 1. Clone this repository:
