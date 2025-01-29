@@ -135,3 +135,38 @@ const person = {
         console.log(`Hi! My name is ${this.name[0]} ${this.name[1]}.`);
     },
 }
+
+person['eyes'] = 'brown';
+person.farewell = function () {
+    console.log('Bye!');
+}
+person.farewell();
+
+const myDataName = 'height';
+const myDataValue = '1.75m';
+person[myDataName] = myDataValue;
+
+function createPerson(name) {
+    const obj = {};
+    obj.name = name;
+    obj.introduceSelf = function() {
+        console.log(`Hello! I'm ${this.name}.`);
+    }
+    return obj
+}
+
+function Person(name) {
+    this.name = name;
+    this.introduceSelf = function() {
+        console.log(`Hi! I'm ${this.name}`);
+    };
+}
+
+function addOne(num) {
+    return num + 1;
+}
+
+const arr = [1, 2, 3, 4, 5];
+const mappedArr = arr.map(addOne);
+// const mappedArr = arr.map((num) => num + 1); inline function
+console.log(mappedArr); // 
