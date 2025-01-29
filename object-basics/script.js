@@ -124,3 +124,14 @@ function multiplyNumeric(obj) {
         }
     }
 }
+
+const person = {
+    name: ['Bob', 'Smith'],
+    age: 32,
+    bio() {
+        console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old.`);
+    },
+    introduceSelf() {
+        console.log(`Hi! My name is ${this.name[0]} ${this.name[1]}.`);
+    },
+}
