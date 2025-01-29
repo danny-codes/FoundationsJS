@@ -17,7 +17,7 @@ This repository contains my solutions and exercises from the **JavaScript Founda
 8. **rock-paper-scissors**: A simple Rock-Paper-Scissors game built in JavaScript and with UI.
 
 ### Purpose:
-This project is my personal practice as I work through the foundational topics in JavaScript. The goal is to solidify my understanding of the concepts, improve my coding skills, and eventually tackle more complex projects.
+This repo is for my personal practice as I work through the foundational topics in JavaScript. The goal is to solidify my understanding of the concepts, improve my coding skills, and eventually tackle more complex projects.
 
 ### Live Preview:
 - [Rock Paper Scissors Game](https://danny-codes.github.io/FoundationsJS/)
