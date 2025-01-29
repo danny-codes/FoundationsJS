@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(67, 67, 67);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: monospace;
+}
+
+h1 {
+    color: white;
+    text-shadow: 1px 1px 1px #3e3e3e;
+    text-align: center;
+    font-size: 32px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    margin-top: 30px;
+    /* width: 960px;
+    height: 960px; */
+    width: 480px;
+    height: 480px;
+    align-self: center;
+    overflow:hidden;
+    color:rgb(237, 225, 210);
+    border: 3px dotted rgb(77, 103, 255);
+}
+
+.hover-effect {
+    background-color: rgb(237, 225, 210);
+}
+
+.pixel {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+    animation: fadeOut 30s forwards;
+}
+
+#numberBtn {
+    max-width: fit-content;
+    align-self: center;
+    display: inline-block; /* fallback for older browsers */
+    outline: 0;
+    cursor: pointer;
+    border: 1px solid #babfc3;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgba(0,0,0,0.05) 0px 1px 0px 0px;
+    background-color: rgb(119, 160, 160);
+    color: white;
+}
+
+#numberBtn:hover {
+    transform: scale(1.05);
+    background-color: rgb(87, 113, 113);
+    outline: 1px solid transparent;
+}
+
+footer {
+    margin-top: auto;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 0;
+    background-color: rgb(98, 98, 98);
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.05);
+    border-top: 1px solid #494949;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(144, 149, 255);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
