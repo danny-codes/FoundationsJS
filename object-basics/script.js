@@ -220,3 +220,56 @@ function sumOfTripledEvens2(array) {
     .map((num) => num * 3)
     .reduce((acc, curr) => acc + curr);
 }
+
+let array = ["I", "study", "JavaScript"];
+
+let removed = array.splice(0, 2);
+console.log(removed);
+array.splice(2, 0, 'complex', 'language');
+console.log(array);
+
+let numArr = [1, 2, 5];
+numArr.splice(-1, 0, 3, 4); // -1 means one step from the end
+console.log(numArr);
+console.log( numArr.slice(0, 2) );
+
+let users = [
+    {id: 1, name: "John"},
+    {id: 2, name: "Pete"},
+    {id: 3, name: "Mary"}
+];
+
+let getUser = users.find(item => item.id == 1);
+console.log(getUser.name); // John
+
+let someUsers = users.filter(item => item.id < 3);
+console.log(someUsers.length); // 2
+
+let lengths = ['Biblo', 'Gandalf', 'Nazgul'].map(item => item.length);
+console.log(lengths); // 5, 7, 6
+
+function compareNumeric(a, b) {
+    if (a > b) return 1;
+    if (a == b) return 0;
+    if (a < b) return -1;
+}
+
+let numbers = [1, 2, 13];
+
+numbers.sort(compareNumeric);
+// numbers.sort(function(a,b) {return a - b;});
+// numbers.sort((a, b) => a - b);
+
+console.log(numbers)
+
+let names = 'Bilbo, Gandalf, Nazgul';
+
+let namesArr = names.split(', ');
+
+let stringsArr = ['Bilbo', 'Gandalf', 'Nazgul'];
+let str = stringsArr.join(';'); // glue the array into a string using ;
+console.log(str);
+
+for (let name of namesArr) {
+    console.log(`A message to ${name}`);
+}
