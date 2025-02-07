@@ -273,3 +273,13 @@ console.log(str);
 for (let name of namesArr) {
     console.log(`A message to ${name}`);
 }
+
+const numList = [1, 2, 3];
+
+const add = (a, b) => a + b;
+
+const addResult = numList.reduce(add);
+
+// alert(Array.isArray({})); false
+
+// alert(Array.isArray([])); true
