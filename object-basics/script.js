@@ -283,3 +283,18 @@ const addResult = numList.reduce(add);
 // alert(Array.isArray({})); false
 
 // alert(Array.isArray([])); true
+
+function camalize(str) {
+    const noDashArr = str.split('-');
+    console.log(array);
+
+    for (let i = 0; i < noDashArr.length; i++) {
+        if (i > 0) {
+            noDashArr[i] = noDashArr[i].charAt(0).toUpperCase() + noDashArr[i].slice(1);
+        }
+    }
+    return noDashArr.join('');
+}
+
+camalize('hello-world'); // "helloWorld"
+console.log(camalize('my-long-string')); // "myLongString";
