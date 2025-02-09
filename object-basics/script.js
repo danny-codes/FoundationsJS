@@ -346,3 +346,17 @@ let stringArr = ['HTML', 'JavaScript', 'CSS'];
 let sorted = copySorted(stringArr);
 
 console.log(sorted);
+
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let userArr = [ john, pete, mary ];
+
+// let namesName = userArr.forEach(item => {
+//     return item.name;
+// });
+
+let namesName = userArr.map(item => item.name);
+
+console.log(namesName);
