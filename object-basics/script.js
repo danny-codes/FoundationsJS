@@ -378,3 +378,11 @@ sortByAge(userArr);
 console.log(userArr[0].name); // John
 console.log(userArr[1].name); // Mary
 console.log(userArr[2].name); // Pete
+
+let shuffleArr = [1, 2, 3];
+
+function shuffle(arr) {
+    arr.sort(() => Math.random() - 0.5)
+}
+
+shuffle(shuffleArr);
