@@ -417,7 +417,7 @@ let usersObj = [
     {id: 'pete', name: "Pete Peterson", age: 31},
 ];
 
-function usersObj(array) {
+function groupById(array) {
     return array.reduce((obj, value) => {
         obj[value.id] = value;
         return obj;
