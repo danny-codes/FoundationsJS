@@ -315,3 +315,24 @@ let filtered = filterRange(arr, 1, 4);
 
 console.log(filtered);
 console.log(numberArray);
+
+function filterRangeInPlace(arr, a, b) {
+
+    for (let i = 0; i < arr.length; i++) {
+        let val = arr[i];
+
+        if (val < a || val > b) {
+            arr.splice(i, 1);
+            i--;
+        }
+    }
+}
+
+filterRangeInPlace(numberArray, 1, 4);
+console.log(numberArray);
+
+let numbersSort = [5, 2, 1, -10, 8];
+
+numbersSort.sort((a, b) => b - a);
+
+console.log(numbersSort);
