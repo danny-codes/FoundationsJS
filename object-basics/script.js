@@ -304,3 +304,14 @@ function betterCamalize(str) {
 }
 camalize('hello-world'); // "helloWorld"
 console.log(camalize('my-long-string')); // "myLongString";
+
+function filterRange(arr, a, b) {
+    return arr.filter(item => (a <= item && b >= item));
+}
+
+let numberArray = [5, 3, 8, 1];
+
+let filtered = filterRange(arr, 1, 4);
+
+console.log(filtered);
+console.log(numberArray);
