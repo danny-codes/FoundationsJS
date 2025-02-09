@@ -368,3 +368,13 @@ let usersMapped = userArr.map(user => ({
 
 console.log(usersMapped[0].id);
 console.log(usersMapped[0].fullName);
+
+function sortByAge(arr) {
+    arr.sort((a, b) => a.age - b.age);
+}
+
+sortByAge(userArr);
+
+console.log(userArr[0].name); // John
+console.log(userArr[1].name); // Mary
+console.log(userArr[2].name); // Pete
