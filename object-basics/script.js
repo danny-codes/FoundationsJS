@@ -336,3 +336,13 @@ let numbersSort = [5, 2, 1, -10, 8];
 numbersSort.sort((a, b) => b - a);
 
 console.log(numbersSort);
+
+function copySorted(arr) {
+    return arr.slice().sort();
+}
+
+let stringArr = ['HTML', 'JavaScript', 'CSS'];
+
+let sorted = copySorted(stringArr);
+
+console.log(sorted);
