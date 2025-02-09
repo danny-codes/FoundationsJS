@@ -347,9 +347,9 @@ let sorted = copySorted(stringArr);
 
 console.log(sorted);
 
-let john = { name: "John", surname: "Smith", id: 1 };
-let pete = { name: "Pete", surname: "Hunt", id: 2 };
-let mary = { name: "Mary", surname: "Key", id: 3 };
+let john = { name: "John", surname: "Smith", id: 1, age: 25 };
+let pete = { name: "Pete", surname: "Hunt", id: 2, age: 30 };
+let mary = { name: "Mary", surname: "Key", id: 3, age: 26 };
 
 let userArr = [ john, pete, mary ];
 
@@ -386,3 +386,9 @@ function shuffle(arr) {
 }
 
 shuffle(shuffleArr);
+
+function getAverageAge(users) {
+    return users.reduce((prev, user) => prev + user.age, 0) / users.length;
+}
+
+console.log(getAverageAge(userArr));
