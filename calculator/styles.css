@@ -5,6 +5,7 @@
 
 body {
     font-family: Roboto;
+    background-color: rgb(215, 215, 215);
 }
 
 #calculator-container {
@@ -29,6 +30,8 @@ body {
     border-radius: 10px;
     border-style: none;
     background-color: rgb(191, 215, 147);
+    font-size: 25px;
+    text-align: end;
 }
 
 .calc-btn {
@@ -39,6 +42,14 @@ body {
     border-radius: 10px;
     text-align: center;
     color: white;
+    cursor: pointer;
+}
+
+.calc-btn:hover {
+    /* background-color: rgb(14, 14, 14); */
+    background-color: hsl(140, 21%, 54%);
+    cursor: pointer;
+    transform: scale(1.10)
 }
 
 .btn-color {
