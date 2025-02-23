@@ -20,8 +20,9 @@ let num1;
 let num2;
 let operator;
 let isSecondNum = false;
+let hasResult = false;
 
-const add = function(a, b) {
+function add(a, b) {
 	return a + b;
 };
 
@@ -50,34 +51,15 @@ clearBtn.addEventListener('click', () => {
     console.log('Clear button clicked!');
 });
 
-function displayDigit(number) {
+document.querySelectorAll('.num-btn').forEach(number => {
     number.addEventListener('click', () => {
-        input.value += number.textContent;
-        console.log(`${number} button clicked!`);
-    })
-}
-console.log(num1);
-
-displayDigit(numberZero);
-displayDigit(numberOne);
-displayDigit(numberTwo);
-displayDigit(numberThree);
-displayDigit(numberFour);
-displayDigit(numberFive);
-displayDigit(numberSix);
-displayDigit(numberSeven);
-displayDigit(numberEight);
-displayDigit(numberNine);
-
-function eventListenerForNums(number) {
-    number.addEventListener('click', () => {
-        if (isSecondNum) {
-            input.value = '';
-            isSecondNum = false;
+        if(hasResult) {
+            input.value = ''
+            hasResult = false;
         }
         input.value += number.textContent;
-    })
-}
+    });
+});
 
 function digitButtonsTrigger(button) {
     button.addEventListener('click', () => {
@@ -87,30 +69,13 @@ function digitButtonsTrigger(button) {
         operator = button.textContent;
         isSecondNum = true;
         input.value = '';
-        console.log(`${opeartor} button is clicked!`)
+        console.log(`${operator} button is clicked!`)
     });
 }
 digitButtonsTrigger(plus);
 digitButtonsTrigger(minus);
 digitButtonsTrigger(multiplyBtn);
 digitButtonsTrigger(divideBtn);
-
-function operate(num1, num2, operator) {
-    num2 = Number(input.value);
-    let resultValue;
-    if (operator === '+') {
-        resultValue = add(num1, num2);
-    } else if (operator === '-') {
-        resultValue = subtract(num1, num2);
-    } else if (operator === '*') {
-        resultValue = multiply(num1, num2);
-    } else if (operator === '/') {
-        resultValue = divide(num1, num2);
-    }
-    input.value = resultValue;
-    console.log('Result:', resultValue);
-}
-
 
 result.addEventListener('click', () => {
     num2 = Number(input.value);
@@ -119,15 +84,15 @@ result.addEventListener('click', () => {
         resultValue = add(num1, num2);
     } else if (operator === '-') {
         resultValue = subtract(num1, num2);
-    } else if (operator === '*') {
+    } else if (operator === '×') {
         resultValue = multiply(num1, num2);
-    } else if (operator === '/') {
+    } else if (operator === '÷') {
         resultValue = divide(num1, num2);
     }
-    input.value = resultValue;
-    console.log('Result:', resultValue);
 
+    input.value = resultValue;
     num1 = resultValue;
     operator = undefined;
     isSecondNum = false;
-})
+    hasResult = true;
+});
