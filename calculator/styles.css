@@ -1,0 +1,104 @@
+:root {
+    --primary-color: rgb(143, 143, 143);
+    --accent-color: hsl(140, 21%, 54%);
+    --input-bg-color: rgb(191, 215, 147);
+    --button-hover-bg: hsl(140, 21%, 54%);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('./fonts/Roboto-Regular.woff2');
+}
+
+@font-face {
+    font-family: Roboto;
+    font-weight: bold;
+    src: url('./fonts/Roboto-Bold.woff2');
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Roboto;
+    background-color: rgb(215, 215, 215);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+#calculator-container {
+    width: 200px;
+    height: auto;
+    background-color: gray;
+}
+
+#btns-container {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    gap: 3px;
+    padding: 15px;
+}
+
+#calc-input {
+    width: 186px;
+    height: 35px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 25px;
+    text-align: end;
+    background-color: var(--input-bg-color);
+}
+
+#calc-input:focus {
+    outline: none;
+}
+
+.calc-btn {
+    font-size: 32px;
+    border-style: none;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+.calc-btn:hover {
+    background-color: var(--button-hover-bg);
+    cursor: pointer;
+    transform: scale(1.10)
+}
+
+.btn-color {
+    background-color: rgb(205, 205, 205);
+}
+
+footer {
+    margin-top: auto;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 10px;
+    background-color: rgb(190, 190, 190);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    font-weight: bold;
+    color: rgba(0, 25, 190, 0.452);
+}
