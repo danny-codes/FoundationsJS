@@ -19,6 +19,7 @@ let clearBtn = document.querySelector('#clear');
 let num1;
 let num2;
 let operator;
+let isSecondNum = false;
 
 const add = function(a, b) {
 	return a + b;
@@ -48,12 +49,15 @@ function divide(a, b) {
 //     return array.reduce((product, current) => product * current)
 // };
 
-document.addEventListener('DOMContentLoaded', () => {
-    clearBtn.addEventListener('click', () => {
-        input.value = '';
-        console.log('Clear button clicked!');
-    })
-})
+
+clearBtn.addEventListener('click', () => {
+    input.value = '';
+    num1 = undefined;
+    num2 = undefined;
+    operator = undefined;
+    isSecondNum = false;
+    console.log('Clear button clicked!');
+});
 
 function displayDigit(number) {
     number.addEventListener('click', () => {
@@ -76,62 +80,88 @@ displayDigit(numberNine);
 
 function eventListenerForNums(number) {
     number.addEventListener('click', () => {
-        input.value = '';
-        input.value = number.textContent;
+        // input.value = '';
+        if (isSecondNum) {
+            input.value = '';
+            isSecondNum = false;
+        }
+        input.value += number.textContent;
     })
 }
 
 function digitButtonsTrigger(button) {
     button.addEventListener('click', () => {
-        num1 = input.value;
+        if (!num1) {
+            // num1 = input.value;
+            num1 = Number(input.value);
 
-        // if (eventListenerForNums(numberZero) ||
-        // eventListenerForNums(numberOne) ||
-        // eventListenerForNums(numberTwo) ||
-        // eventListenerForNums(numberThree) ||
-        // eventListenerForNums(numberFour) ||
-        // eventListenerForNums(numberFive) ||
-        // eventListenerForNums(numberSix) || 
-        // eventListenerForNums(numberSeven) ||
-        // eventListenerForNums(numberEight) || 
-        // eventListenerForNums(numberNine)
-        // ) {
-        //     console.log('hello');
-        //     num2 = input.value;    
-        // }
-        eventListenerForNums(numberZero);
-        eventListenerForNums(numberOne);
-        eventListenerForNums(numberTwo);
-        eventListenerForNums(numberThree);
-        eventListenerForNums(numberFour);
-        eventListenerForNums(numberFive);
-        eventListenerForNums(numberSix);
-        eventListenerForNums(numberSeven);
-        eventListenerForNums(numberEight);
-        eventListenerForNums(numberNine);
-        num2 = input.value;
-        operator = button.textContent;   
-    })
+        }
+        operator = button.textContent;
+        isSecondNum = true;
+        input.value = '';
+        console.log(`${opeartor} button is clicked!`)
+
+        // eventListenerForNums(numberZero);
+        // eventListenerForNums(numberOne);
+        // eventListenerForNums(numberTwo);
+        // eventListenerForNums(numberThree);
+        // eventListenerForNums(numberFour);
+        // eventListenerForNums(numberFive);
+        // eventListenerForNums(numberSix);
+        // eventListenerForNums(numberSeven);
+        // eventListenerForNums(numberEight);
+        // eventListenerForNums(numberNine);
+    });
 }
 digitButtonsTrigger(plus);
-
-// let userNumbers = input ARRAY
-// console.log(input.value);
-
+digitButtonsTrigger(minus);
+digitButtonsTrigger(multiplyBtn);
+digitButtonsTrigger(divideBtn);
 
 function operate(num1, num2, operator) {
+    num2 = Number(input.value);
+    let resultValue;
     if (operator === '+') {
-        return add(num1, num2);
+        resultValue = add(num1, num2);
     } else if (operator === '-') {
-        return subtract(num1, num2);
+        resultValue = subtract(num1, num2);
     } else if (operator === '*') {
-        return multiply(num1, num2);
+        resultValue = multiply(num1, num2);
     } else if (operator === '/') {
-        return divide(num1, num2);
+        resultValue = divide(num1, num2);
     }
+    input.value = resultValue;
+    console.log('Result:', resultValue);
 }
 
 
 result.addEventListener('click', () => {
-    operate()
+    num2 = Number(input.value);
+    let resultValue;
+    if (operator === '+') {
+        resultValue = add(num1, num2);
+    } else if (operator === '-') {
+        resultValue = subtract(num1, num2);
+    } else if (operator === '*') {
+        resultValue = multiply(num1, num2);
+    } else if (operator === '/') {
+        resultValue = divide(num1, num2);
+    }
+    input.value = resultValue;
+    console.log('Result:', resultValue);
+
+    num1 = resultValue;
+    operator = undefined;
+    isSecondNum = false;
+
+    // eventListenerForNums(numberZero);
+    // eventListenerForNums(numberOne);
+    // eventListenerForNums(numberTwo);
+    // eventListenerForNums(numberThree);
+    // eventListenerForNums(numberFour);
+    // eventListenerForNums(numberFive);
+    // eventListenerForNums(numberSix);
+    // eventListenerForNums(numberSeven);
+    // eventListenerForNums(numberEight);
+    // eventListenerForNums(numberNine);
 })
