@@ -33,10 +33,6 @@ function multiply(a, b) {
     return a * b;
 }
 
-// const multiply = function (array) {
-//     return array.reduce((product, current) => product * current)
-// };
-
 function divide(a, b) {
     if (b === 0) {
         return 'You have entered singularity.';
@@ -44,11 +40,6 @@ function divide(a, b) {
         return a / b;
     }
 }
-
-// const multiply = function (array) {
-//     return array.reduce((product, current) => product * current)
-// };
-
 
 clearBtn.addEventListener('click', () => {
     input.value = '';
@@ -80,7 +71,6 @@ displayDigit(numberNine);
 
 function eventListenerForNums(number) {
     number.addEventListener('click', () => {
-        // input.value = '';
         if (isSecondNum) {
             input.value = '';
             isSecondNum = false;
@@ -92,25 +82,12 @@ function eventListenerForNums(number) {
 function digitButtonsTrigger(button) {
     button.addEventListener('click', () => {
         if (!num1) {
-            // num1 = input.value;
             num1 = Number(input.value);
-
         }
         operator = button.textContent;
         isSecondNum = true;
         input.value = '';
         console.log(`${opeartor} button is clicked!`)
-
-        // eventListenerForNums(numberZero);
-        // eventListenerForNums(numberOne);
-        // eventListenerForNums(numberTwo);
-        // eventListenerForNums(numberThree);
-        // eventListenerForNums(numberFour);
-        // eventListenerForNums(numberFive);
-        // eventListenerForNums(numberSix);
-        // eventListenerForNums(numberSeven);
-        // eventListenerForNums(numberEight);
-        // eventListenerForNums(numberNine);
     });
 }
 digitButtonsTrigger(plus);
@@ -153,15 +130,4 @@ result.addEventListener('click', () => {
     num1 = resultValue;
     operator = undefined;
     isSecondNum = false;
-
-    // eventListenerForNums(numberZero);
-    // eventListenerForNums(numberOne);
-    // eventListenerForNums(numberTwo);
-    // eventListenerForNums(numberThree);
-    // eventListenerForNums(numberFour);
-    // eventListenerForNums(numberFive);
-    // eventListenerForNums(numberSix);
-    // eventListenerForNums(numberSeven);
-    // eventListenerForNums(numberEight);
-    // eventListenerForNums(numberNine);
 })
