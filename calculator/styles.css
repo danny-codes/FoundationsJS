@@ -1,3 +1,10 @@
+:root {
+    --primary-color: rgb(143, 143, 143);
+    --accent-color: hsl(140, 21%, 54%);
+    --input-bg-color: rgb(191, 215, 147);
+    --button-hover-bg: hsl(140, 21%, 54%);
+}
+
 @font-face {
     font-family: Roboto;
     src: url('./fonts/Roboto-Regular.woff2');
@@ -48,9 +55,10 @@ main {
     margin-left: 5px;
     border-radius: 10px;
     border-style: none;
-    background-color: rgb(191, 215, 147);
+    /* background-color: rgb(191, 215, 147); */
     font-size: 25px;
     text-align: end;
+    background-color: var(--input-bg-color);
 }
 
 #calc-input:focus {
@@ -66,11 +74,13 @@ main {
     text-align: center;
     color: white;
     cursor: pointer;
+    background-color: var(--primary-color);
 }
 
 .calc-btn:hover {
     /* background-color: rgb(14, 14, 14); */
-    background-color: hsl(140, 21%, 54%);
+    /* background-color: hsl(140, 21%, 54%); */
+    background-color: var(--button-hover-bg);
     cursor: pointer;
     transform: scale(1.10)
 }
