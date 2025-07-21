@@ -59,7 +59,7 @@ An on-screen calculator that performs basic arithmetic operations.
 - Features decimal input, clear button, and error handling (e.g., divide by zero).
 - Focuses on state management and UI updating.
 
-![Calculator](screenshots/etch-a-sketch.png)
+![Calculator](screenshots/calculator.png)
 
 [Calculator Link](https://danny-codes.github.io/FoundationsJS/calculator/index.html)
 
@@ -85,6 +85,16 @@ These exercises helped me build a solid foundation in JavaScript and DOM manipul
 
 ### Purpose:
 This repo is for my personal practice as I work through the foundational topics in JavaScript. The goal is to solidify my understanding of the concepts, improve my coding skills, and eventually tackle more complex projects.
+
+---
+
+## 📦 Next Steps
+
+After completing these foundational projects, I continued building more advanced projects in **The Odin Project Full Stack JavaScript** course.
+
+➡️ Check out those projects here: [FullStackJS Projects Repository](https://github.com/danny-codes/TheOdinProjectRepo)
+
+---
 
 ### How to Run the Project Locally:
 1. Clone this repository:
