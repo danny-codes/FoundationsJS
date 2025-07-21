@@ -40,7 +40,6 @@ Console-based Rock Paper Scissors game.
 A pixel drawing app inspired by the classic toy.
 
 - Dynamically generates a customizable grid using JavaScript.
-- Adds color-changing hover effects with mouse events.
 - Allows users to set grid size with input prompts.
 - Practices DOM manipulation and CSS Flexbox layout.
 
